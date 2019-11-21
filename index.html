@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS, homeworks</title>
+</head>
+<body>
+	<script type="application/javascript">
+		var milkBear = ["Milk", "Beer", "Beer", "Milk", "Milk"];
+		const TYPE = 'Beer';
+		var milk = 'Good';
+		var beer = 'Bad';
+
+		for (var i = 0; i < milkBear.length; i++){
+			if (milkBear[i] == TYPE) {
+				console.log(milk);
+			}else{
+				console.log(beer);
+			};
+
+		};
+
+	</script>
+
+
+	<script type="application/javascript">
+		function averageSum(averMassive){
+			let answer = 0;
+			let test;
+			let total = 0;
+
+			for (let i = 0; i < averMassive.length; i++) {
+				total = total + averMassive[i];
+
+			};
+
+			answer = total / averMassive.length;
+			console.log(answer);
+			return answer;
+
+		};
+
+		const myMassive = [1, 5, 12, 4, 3];
+		const yourMassive = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+		const herMassive = [3, 10, 17];
+
+		averageSum(myMassive);
+		averageSum(yourMassive);
+		averageSum(herMassive);
+
+	</script>
+
+
+	<script type="application/javascript">
+		function qA(){
+			let question = prompt('A square table sawed off one corner. How many corners has he got now?');
+
+			if (question == 5){
+				alert("Correct answer!");
+			}else if (question == 'five'){
+				alert("Correct answer!");
+			}else{
+				alert("Uncorrect! Correct answer is 5");
+			};
+		};
+
+		qA();
+
+	</script>
+
+	<script type="application/javascript">
+		function toStr(){
+			let Duck = {name: 'Donald', color: 'White', old: 1};
+			let answer = `"${Duck.name}, ${Duck.color}, ${Duck.old}, year"`;
+			return console.log(answer);
+		}
+
+		function say(){
+			let Message = {message: 'кря кря'};
+			let answer = `"${Message.message}"`;
+			return console.log(answer);
+
+		}
+
+		toStr();
+		say();
+
+	</script>
+	
+</body>
+</html>
