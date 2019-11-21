@@ -23,7 +23,7 @@
 	</script>
 
 
-	<!-- <script type="application/javascript">
+	<script type="application/javascript">
 		function averageSum(averMassive){
 			let answer = 0;
 			let test;
@@ -55,37 +55,37 @@
 		function qA(){
 			let question = prompt('A square table sawed off one corner. How many corners has he got now?');
 
-			if (question == 5){
-				alert("Correct answer!");
-			}else if (question == 'five'){
+			if (question == 5 || question == 'five'){
 				alert("Correct answer!");
 			}else{
 				alert("Uncorrect! Correct answer is 5");
 			};
 		};
-
+		
 		qA();
 
 	</script>
 
 	<script type="application/javascript">
-		function toStr(){
-			let Duck = {name: 'Donald', color: 'White', old: 1};
-			let answer = `"${Duck.name}, ${Duck.color}, ${Duck.old}, year"`;
-			return console.log(answer);
-		}
+		let Duck = {
+			name: 'Donald',
+			color: 'White',
+			old: 1,
+			toStr: function() {
+				let answer = `"${Duck.name}, ${Duck.color}, ${Duck.old}, year"`;
+				return console.log(answer);
+			},
+			say: function(){
+				let Message = {message: 'кря кря'};
+				let answer = `"${Message.message}"`;
+				return console.log(answer);
+			}
+		};
 
-		function say(){
-			let Message = {message: 'кря кря'};
-			let answer = `"${Message.message}"`;
-			return console.log(answer);
+		Duck.toStr();
+		Duck.say();
 
-		}
-
-		toStr();
-		say();
-
-	</script> -->
+	</script>
 	
 </body>
 </html>
