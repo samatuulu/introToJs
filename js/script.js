@@ -9,4 +9,4 @@ function randomTag(){
 
 };
 
-var intervalId = setInterval(randomTag, 3000);
+var intervalId = setInterval(randomTag, 5000);
