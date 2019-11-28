@@ -1,7 +1,7 @@
 var urlParams = new URLSearchParams(window.location.search);
 var param = urlParams.get('code');
 
-let test = "https://restcountries.eu/rest/v2/alpha/" + param + "?fields=name;capital;callingCodes;population;area"
+let link = "https://restcountries.eu/rest/v2/alpha/" + param + "?fields=name;capital;callingCodes;population;area"
 
 const container = $("#container");
 
@@ -40,7 +40,7 @@ function jqueryParseData(response, status) {
 
 function jqueryLoadIndex(){
 	$.ajax({
-		url: test,
+		url: link,
 		method: 'GET',
 		success: jqueryParseData,
 		error: jqueryAjaxError
